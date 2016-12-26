@@ -1,127 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta name="description" contents="Berkeley ABA's Website">
-  <title>Berkeley ABA Website</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <style>
-    /* Remove the navbar's default margin-bottom and rounded borders */ 
-    .navbar {
-      margin-bottom: 0;
-      border-radius: 0;
-    }
-    
-    /* Add a gray background color and some padding to the footer */
-    footer {
-      background-color: #f2f2f2;
-      padding: 25px;
-    }
-    
-  .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
-      min-height:200px;
-  }
 
-  /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
-    .carousel-caption {
-      display: none; 
-    }
-  }
-  </style>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Berkeley ABA Website">
+    <meta name="author" content="Timothy Hsu">
+
+    <title>Berkeley ABA</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/small-business.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='http://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
 </head>
+
 <body>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="index.html">ABA</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="#">About</a></li>
-        <li><a href="members.html">Members</a></li>
-        <li><a href="careers.html">Careers</a></li>
-      </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
 
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-    </ol>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="members.html">Members</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                    <li>
+                        <a href="careers.html">Careers</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <img src="https://placehold.it/1200x400?text=IMAGE" alt="Image">
-        <div class="carousel-caption">
-          <h3>Sell $</h3>
-          <p>Money Money.</p>
-        </div>      
-      </div>
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/HomePhoto.jpg')">
+        <div class="container overlay">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>Berkeley ABA</h1>
+                        <hr class="small">
+                        <span class="subheading">The Largest Haas Sponsored Business Organization<br></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
-      <div class="item">
-        <img src="https://placehold.it/1200x400?text=Another Image Maybe" alt="Image">
-        <div class="carousel-caption">
-          <h3>More Sell $</h3>
-          <p>Lorem ipsum...</p>
-        </div>      
-      </div>
+    <!-- Main Content -->
+
+
+    <div class="container-fluid container-90">
+        <div class="row">
+
+            <div class="col-md-3">
+                <div class="post-preview">
+                    <a href="page.html">
+                        <p class="post-meta">Family</p>
+                        <img class="img-responsive" src="img/Community.jpg">
+                        <h2 class="post-title">
+                            Community
+                        </h2>
+                        <h3 class="post-subtitle">
+                            ABA truly values the concept of community and many have found one within ABA. Every semester, ABA hosts several events such as pizza nights, retreats, and banquets to allow members to build upon its community and strengthen existing relationships. Because ABA is such a large organization, we have set up a “Buddy System” to help each member feel right at home. Members are placed into Buddy Groups, each of which is headed by a unique member of Cabinet, where they have the opportunity to meet more people and get to know one another better. As a result, many members find themselves creating lifelong friendships within ABA.
+                        </h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="post-preview">
+                    <a href="page.html">
+                        <p class="post-meta">Confident</p>
+                        <img class="img-responsive" src="img/Professionalism.jpg">
+                        <h2 class="post-title">
+                            Professionalism
+                        </h2>
+                        <h3 class="post-subtitle">
+                            ABA works with prestigious companies to host workshops that help its members develop the skills to excel in today’s professional world. Career fairs, resume and interview workshops, and networking mixers are just some of the professional events that we offer. ABA has partnered with top firms including McKinsey, Deloitte, JPMorgan and Google.
+
+                            ABA assists members to learn more about the Haas School of Business. We also provide members with a variety of resources, including connections to our alumni. To learn more about our extensive Alumni network,  please visit the Alumni page.
+                        </h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="post-preview">
+                    <a href="page.html">
+                        <p class="post-meta">Giving Back</p>
+                        <img class="img-responsive" src="img/Service.jpg">
+                        <h2 class="post-title">
+                            Service
+                        </h2>
+                        <h3 class="post-subtitle">
+                            ABA realizes the importance of contributing to our communities. In this effort, the Community Service Chairs host two large-scale service projects annually. This fall, our community service chairs will host a high school mentorship program, where they assist high school students with their college applications.
+
+                            In the spring, ABA works with the Internal Revenue Service to organize the Volunteer Income Tax Assistance (VITA) program. Our events raise thousands of dollars for charity and help hundreds of families. To learn more about the community service events that ABA offers, please visit our Philanthropy page.
+                        </h3>
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="post-preview">
+                    <a href="page.html">
+                        <p class="post-meta">Est. 1975</p>
+                        <img class="img-responsive" src="img/History.jpg">
+                        <h2 class="post-title">
+                            History
+                        </h2>
+                        <h3 class="post-subtitle">     
+                        ABA was founded in 1975 by a group of students who set out to provide a bridge between the professional world and the students of the UC Berkeley campus. Over the course of its 40+ years of history, ABA has expanded its mission and now represents many diverse majors and cultures:
+
+                        The mission of ABA is to advance the study of business and to develop well-rounded leaders at the University of California, Berkeley. ABA promotes scholarship and leadership at the Walter A. Haas School of Business, encourages career exploration, and cultivates community-building and networking within and beyond the University. ABA emphasizes social responsibility in contemporary business practices and encourages its members to serve the local community.
+                        </h3>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        <!-- Pager
+        <ul class="pager">
+            <li class="next">
+                <a href="#">Older</a>
+            </li>
+        </ul> -->
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-</div>
-  
-<div class="container text-center">    
-  <h3>What We Do</h3><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Current Project</p>
-    </div>
-    <div class="col-sm-4"> 
-      <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
-      <p>Project 2</p>    
-    </div>
-    <div class="col-sm-4">
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-      <div class="well">
-       <p>Some text..</p>
-      </div>
-    </div>
-  </div>
-</div><br>
 
-<footer class="container-fluid text-center">
-  <p>Footer Text</p>
-</footer>
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://www.facebook.com/BerkeleyABA/?fref=ts">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:abapresident.berkeley@gmail.com">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-envelope fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/user/ABAMedia">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-youtube fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">&copy; 2015 <a href="http://forbetterweb.com">Timothy Hsu</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/small-business.min.js"></script>
+
+    <!-- Smooth Scroll -->
+    <script src="js/SmoothScroll.js"></script>
+
+<!--
+Google Analitics
+Demo Purpose Only
+Change UA-XXXXXXX-X to be your site's ID
+ -->
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-1057679-2', 'auto');
+    ga('send', 'pageview');
+</script>
 
 </body>
+
 </html>
